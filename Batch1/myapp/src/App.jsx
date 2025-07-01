@@ -1,14 +1,9 @@
-import './App.css'
-import Greeting from './core-concepts/conponents/Greeting'
-import Greetingclass from './core-concepts/conponents/Greetingclass'
-import Helloworld from './core-concepts/helloworld'
+import JSXExample from "./core-concepts/jsx/JSXExample"
 
 function App() {
   return (
     <>
-    <Helloworld/>
-    <Greeting/>
-    <Greetingclass/>
+    <JSXExample/>
     </>
   )
 }
