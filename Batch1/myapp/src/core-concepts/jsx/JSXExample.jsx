@@ -1,8 +1,9 @@
 function JSXExample() {
     const product = [
-        { pid: 1, pname: "Apple", price: 200, dist: "30%" },
-        { pid: 2, pname: "Orange", price: 300, dist: "50%" },
-        { pid: 3, pname: "Graphs", price: 100, dist: "20%" },
+        { pid: 1, pname: "Apple", price: 200, dist: "30%" }, //0
+        { pid: 2, pname: "Orange", price: 300, dist: "50%" },//1
+        { pid: 3, pname: "Graphs", price: 100, dist: "20%" },//2
+        { pid: 4, pname: "Pine apple", price: 200, dist: "20%" },//3
     ];
 
     return (
