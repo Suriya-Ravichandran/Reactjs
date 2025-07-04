@@ -1,8 +1,8 @@
 function Header(){
     return <>
-        <nav className="navbar navbar-expand-lg bg-dark text-white">
+        <nav className="navbar navbar-expand-lg bg-dark text-white sticky-top">
             <div className="container-fluid">
-                <a className="navbar-brand text-white" href="#">Albin Geo Sam</a>
+                <a className="navbar-brand text-white ms-3" href="#">Albin Geo Sam</a>
                 <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -12,11 +12,14 @@ function Header(){
                             <a className="nav-link text-white active" aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Link</a>
+                            <a className="nav-link text-white" href="#">About</a>
+                        </li>
+                         <li className="nav-item">
+                            <a className="nav-link text-white" href="#">Skills</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Project
                             </a>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="#">Action</a></li>
@@ -25,7 +28,7 @@ function Header(){
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white disabled" aria-disabled="true">Disabled</a>
+                            <a className="nav-link text-white disabled me-3" aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                 </div>
