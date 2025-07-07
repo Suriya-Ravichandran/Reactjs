@@ -7,6 +7,7 @@ import Hero from './template/Hero'
 import About from './template/About'
 import Skills from './template/Skills'
 import Project from './template/Project'
+import Footer from './template/footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About/>
       <Skills/>
       <Project/>
+      <Footer/>
     </>
   )
 }

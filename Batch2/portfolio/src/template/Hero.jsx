@@ -1,12 +1,19 @@
 import herobg from '../assets/herobg.jpg'
 
 function Hero(){
+    const handlesubmit=(event)=>{
+        event.preventDefault()
+        console.log(event.target.name.value)
+        console.log(event.target.message.value)
+        alert("Thank you For Hire me")
+    }
+
     return<>
     <div className="container-fluid bg-dark text-white hero">
         <div className="container col-xxl-8 px-4 py-5"> 
             <div className="row flex-lg-row-reverse align-items-center g-5 py-5"> 
                 <div className="col-10 col-sm-8 col-lg-6"> 
-                    <img src={herobg} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/> 
+                    <img src={herobg} className="d-block mx-lg-auto img-fluid animate__animated animate__shakeY animate__slow animate__infinite herobg" alt="Bootstrap Themes" width="700" height="500" loading="lazy" /> 
                 </div> 
                 <div className="col-lg-6">
                     <h1 className="display-5 fw-bold text-white lh-1 mb-3">Albin Geo Sam</h1> 
@@ -22,20 +29,19 @@ function Hero(){
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        <form method='POST'>
+                                        <form onSubmit={handlesubmit}>
                                         <div className="mb-3">
                                             <label for="recipient-name" className="col-form-label">Recipient:</label>
-                                            <input type="text" className="form-control" id="recipient-name"/>
+                                            <input type="text" className="form-control" id="recipient-name" name="name"/>
                                         </div>
                                         <div className="mb-3">
                                             <label for="message-text" className="col-form-label">Message:</label>
-                                            <textarea className="form-control" id="message-text"></textarea>
+                                            <textarea className="form-control" id="message-text" name="message"></textarea>
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="submit" className="btn btn-primary">Send message</button>
                                         </div>
                                         </form>
-                                    </div>
-                                    <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" className="btn btn-primary">Send message</button>
                                     </div>
                                     </div>
                                 </div>

@@ -1,7 +1,7 @@
 function About(){
     return(
         <>
-        <div className="container mt-5">
+        <div className="container mt-5 animate__animated animate__fadeInRight animate__slow">
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-normal lh-1">About</h2> 
