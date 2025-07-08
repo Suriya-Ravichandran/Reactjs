@@ -1,4 +1,4 @@
-import herobg from '../assets/herobg.jpg'
+import herobg from '../../assets/herobg.jpg'
 
 function Hero(){
     const handlesubmit=(event)=>{
