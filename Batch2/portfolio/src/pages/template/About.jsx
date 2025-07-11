@@ -1,4 +1,4 @@
-function About(){
+function AboutDetail(){
     return(
         <>
         <div className="container mt-5 animate__animated animate__fadeInRight animate__slow">
@@ -17,4 +17,4 @@ function About(){
     )
 }
 
-export default About
+export default AboutDetail

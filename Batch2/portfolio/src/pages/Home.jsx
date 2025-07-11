@@ -1,5 +1,5 @@
 import Header from './template/Header'
-import About from './template/About'
+import AboutDetail from './template/About'
 import Skills from './template/Skills'
 import Project from './template/Project'
 import Footer from './template/footer'
@@ -10,7 +10,7 @@ function Home() {
     <>
       <Header/>
       <Hero/>
-      <About/>
+      <AboutDetail/>
       <Skills/>
       <Project/>
       <Footer/>

@@ -1,6 +1,11 @@
+import Header from './template/Header'
+import AboutDetail from './template/About'
+import Footer from './template/footer'
 function About(){
     return<>
-    <h1>About Us page</h1>
+        <Header/>
+        <AboutDetail/>
+        <Footer/>
     </>
 }
 
